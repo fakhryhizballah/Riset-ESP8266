@@ -1,9 +1,9 @@
 const mqtt = require('mqtt')
 const { logger, verify } = require('./mysql');
-const Broker = mqtt.connect('mqtt://app.spairum.my.id', {
-    username: 'sandbox',
-    password: 'testing',
-    clientId: "server",
+const Broker = mqtt.connect(process.env.mqtt_host, {
+    username: process.env.mqtt_username,
+    password: process.env.mqtt_password,
+    clientId: process.env.mqtt_clientId,
     connectTimeout: 1000,
     keepalive: 10
 })

@@ -1,0 +1,11 @@
+# --- Mysql ---
+host= "localhost""
+user= ""
+password= ""
+database= ""
+
+# --- MQTT ---
+mqtt_host = "mqtt:// .."
+mqtt_username: ""
+mqtt_password: ""
+mqtt_clientId: ""
